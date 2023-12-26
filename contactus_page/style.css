@@ -1,0 +1,237 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+    font-family: "ubuntu", sans-serif;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+}
+
+.distance {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+   
+    
+}
+
+/* ------------------------------- */
+
+.mylogo {
+    padding: 10px 20px;
+    margin: -24px 23px;
+    transition: transform .2s;
+}
+
+.mylogo:hover {
+    transform: scale(1.1);
+}
+
+
+
+.navbar{
+    display: flex;
+}
+
+.navbar ul {
+    overflow: auto;
+}
+
+.navbar li {
+    float: left;
+    list-style: none;
+    padding: 0px 0px;
+    margin: 13px 20px;
+    transition: transform 0.2s ease-in-out;
+
+}
+
+.navbar li:hover {
+    transform: scale(1.1);
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: rgb(7, 7, 7);
+    font-size: 14px;
+
+}
+
+.navbar li a:hover {
+    color: rgb(22, 207, 12);
+    stroke: cadetblue;
+
+
+}
+
+/* ----------------------------------- */
+.navbar-btn{
+    display: none;
+    background: transparent;
+    cursor: pointer;
+    /* border: 2px solid black; */
+    width: 5rem;
+    height: auto;
+}
+
+
+.mobile-nav-icon{
+    height: 30px;
+    width: 30px;
+}
+
+.mobile-nav-icon[name="close"] {
+    display: none;
+  }
+
+  /* ---------------------------------- */
+
+  .contactus{
+   background-image: url('images/contact_us_2.jpg');
+   background-position: center;
+   background-size:cover;
+   height: 550px;
+   width: auto;
+   background-repeat: no-repeat;
+   }
+
+   .contact-h{
+   
+    height: 210px;
+
+   }
+
+   .contact-h p{
+   
+    display: flex;
+    justify-content: center;
+    width: 850px;
+    height: 310px;
+    align-items: center;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    font-size: 30px;   
+   }
+
+   .details{
+   
+    width: 810px;
+    height: auto;
+   }
+
+   .details p{
+    padding-top: 20px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    
+    font-size: 15px;
+   }
+   
+
+.footer-in {
+   
+    display: flex;
+    width: auto;
+    /* Adjust the width as needed */
+    margin: 0;
+    background-image: linear-gradient(to left, rgba(67, 38, 124, 0.88), rgb(76, 21, 21));
+}
+
+.footer-logo {
+    filter: invert();
+    margin: 0px;
+  
+}
+
+.footer-logo img{
+    height: 150px;
+    width: 150px;
+}
+
+.cu {
+    padding-top: 40px;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    
+}
+
+.cu-inside{
+    
+    display: flex;
+    
+}
+
+.cu-call img{
+  
+    height: 30px;
+    filter: invert();
+}
+
+.cu-para {
+    padding-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    text-align: center;
+    font-size: 10px;
+    color: white;
+}
+
+
+
+.cu-inside2 {
+    padding-top: 20px;
+    display: flex;
+    
+}
+
+.cu-gmail img{
+    height: 30px;
+    filter: invert();
+}
+
+.cu-para2 {
+    padding-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+}
+
+.social-links {
+    padding-top: 20px;
+    padding-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+   
+    width: auto;
+}
+
+
+.social-links img{
+    filter: invert();
+   
+    padding: 30px;    
+}
+
+
+
+.rights-reserved{
+    padding-left: 20px;
+    padding: 10px;
+    display: flex;
+    align-self: flex-end;
+   
+    color: white;
+    font-size: 10px;
+}

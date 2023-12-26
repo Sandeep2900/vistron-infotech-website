@@ -1,0 +1,823 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "ubuntu", sans-serif;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+}
+
+
+.distance {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    
+}
+
+/* ------------------------------- */
+
+.mylogo {
+    padding: 10px 20px;
+    margin: -24px 23px;
+    transition: transform .2s;
+}
+
+.mylogo:hover {
+    transform: scale(1.1);
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar ul {
+    overflow: auto;
+}
+
+.navbar li {
+    float: left;
+    list-style: none;
+    padding: 0px 0px;
+    margin: 13px 20px;
+    transition: transform 0.2s ease-in-out;
+
+}
+
+.navbar li:hover {
+    transform: scale(1.1);
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: rgb(7, 7, 7);
+    font-size: 14px;
+}
+
+.navbar li a:hover {
+    color: rgb(22, 207, 12);
+    stroke: cadetblue;
+}
+
+/* ------------------------------- */
+.navbar-btn{
+    display: none;
+    background: transparent;
+    cursor: pointer;
+    /* border: 2px solid black; */
+    width: 5rem;
+    height: auto;
+}
+
+
+.mobile-nav-icon{
+    height: 30px;
+    width: 30px;
+}
+
+.mobile-nav-icon[name="close"] {
+    display: none;
+  }
+  
+
+/* ------------------------------- */
+
+.middle {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.6)), url('images/first.jpg');
+    background-position: center;
+    height: 500px;
+    background-blend-mode: darken;
+    background-size: cover;
+}
+
+.slogans {
+    font-size: 20px;
+}
+
+.slogans h1 {
+
+    font-family: "Ubuntu", Sans-serif;
+    font-size: 32px;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    letter-spacing: 3.4px;
+    word-spacing: 1px;
+    color: white;
+}
+
+.slogans h6 {
+    color: white;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+/* ----------------------------------- */
+
+.ourexpandings {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+
+
+.writing1 {
+    margin: 4px;
+    width: 100%;
+    height: auto;
+    /* line-height: 2em; */
+    /* border: 2px solid black; */
+}
+
+.writing1 h1 {
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding-top: 6em;
+    padding-bottom: 11px;
+    letter-spacing: 2px;
+}
+
+.writing1 p {
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    line-height: -133px;
+    color: rgb(97, 97, 97);
+}
+
+/* --------------------------------- */
+
+.slideshow {
+    width: 90%;
+    overflow: hidden;
+    height: 250px;
+    margin: auto;
+    position: relative;
+    display: grid;
+    place-items: center;
+
+}
+
+.insideslideshow {
+    display: flex;
+    width: calc(250px*18);
+    animation: scroll 30s linear infinite;
+
+}
+
+.mySlides {
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+
+.insideslideshow:hover {
+    animation-play-state: paused;
+}
+
+.mySlides img {
+    height: 240px;
+    width: 100%;
+    margin: 10px;
+    /* padding: 10px; */
+    border-radius: 1px;
+    transition: transform 1s;
+}
+
+.mySlides img:hover {
+    transform: translateZ(20px);
+    border-radius: 10px;
+
+}
+
+/* --- gradient shadows --- */
+
+.slideshow::before,
+.slideshow::after {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+
+.slideshow::before {
+    right: 0;
+    transform: rotateZ(180deg);
+}
+
+.slideshow::after {
+    left: 0;
+    right: 0;
+    transform: rotateZ(0deg);
+}
+
+/* -------- animation ----------- */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 9));
+    }
+}
+
+/* ------------------------------------ */
+
+.upperheading {
+    color: #000000;
+    font-size: 20px;
+    font-weight: normal;
+    padding-top: 6em;
+    margin: 0px 0px 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.midlogo {
+    width: 90%;
+    overflow: hidden;
+    height: 250px;
+    margin: auto;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+
+.insidemid {
+    display: flex;
+    
+  
+
+    /* animation: scroll 30s linear infinite; */
+}
+
+
+.myslides2 {
+   
+    justify-content: center;
+    height: 200px;
+    width: 250px;
+    display: flex;
+    /* align-items: center; */
+    padding: 15px;
+    /* perspective: 100px; */
+}
+
+.myslides2 img {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    /* padding: 10px; */
+    border-radius: 1px;
+    /* transition: transform 1s; */
+}
+
+.mySlides2 img:hover {
+    transform: translateZ(20px);
+    border-radius: 10px;
+
+}
+
+/* --- gradient shadows --- */
+
+/* .midlogo::before,
+.midlogo::after {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+} */
+
+/* .midlogo::before {
+    left: 0;
+    right: -5px;
+    transform: rotateZ(180deg);
+} */
+
+/* .midlogo::after {
+    left: -5px;
+    right: 0;
+    transform: rotateZ(0deg);
+} */
+
+/* -------- animation ----------- */
+
+/* @keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 16));
+    }
+} */
+
+/* -------------------------------- */
+
+.heading3 p {
+    display: flex;
+    justify-content: center;
+    padding-top: 90px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.container2 {
+    display: grid;
+    margin: 55px;
+    grid-template-columns: repeat(3, 1fr);
+    
+    grid-template-rows: repeat(2, 1fr);
+    
+    gap: 25px;
+    
+}
+
+.box {
+    width: 100%;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0 50px 80px rgba(0, 0, 0, 0.08);
+}
+
+.boxy {
+    margin: 15px;
+}
+
+#ilogo1 {
+    height: 70px;
+    /* box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.09); */
+}
+
+.box h5 {
+    
+    font-size: 15px;
+    display: flex;
+    font-weight: lighter;
+    line-height: 10px;
+    letter-spacing: 3px;
+}
+
+.box p {
+
+    font-size: 12px;
+    font-weight: lighter;
+    letter-spacing: 3px;
+}
+
+/* ------------------------------------ */
+
+.standapart {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.6)), url('images/last.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 95%;
+}
+
+.standapart h3 {
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.standapart p {
+    color: white;
+    text-align: center;
+}
+
+/*-----------------------------*/
+
+.footer {
+    height: 45em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-image: linear-gradient(to left, rgb(40 25 70 / 88%), rgb(0 0 0));
+    padding-top: 10px;
+    width: 100%;
+    margin: 0;
+}
+
+/*-----------------------------*/
+
+.footerin1 {
+    width: 500px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    left: 80px;
+    top: 0px;
+    flex-direction: column;
+    height: 400px;
+}
+
+.footerlogo {
+    position: relative;
+    left: -22px;
+    padding-left: 0px;
+    filter: invert(70%);
+}
+
+.para {
+    background-image: linear-gradient(to left, rgba(67, 38, 124, 0.88), rgb(76, 21, 21));
+    position: relative;
+    top: 120px;
+    border-radius: 25px;
+}
+
+.para p {
+    position: relative;
+    color: white;
+    padding-left: 15px;
+    font-weight: lighter;
+    font-size: 12px;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    line-height: 22px;
+
+}
+
+/*-----------------------------*/
+
+.footerin3 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: -72px;
+    width: 602px;
+    height: 200px;
+    bottom: -30px;
+    border-radius: 25px;
+}
+
+.footerin3 h3 {
+    color: white;
+    font-weight: lighter;
+    height: 50px;
+    position: relative;
+    left: 12px;
+
+}
+
+.footerin3 p {
+
+    font-size: 14px;
+    color: rgb(223, 207, 207);
+    font-weight: lighter;
+    height: 150px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    padding: 12px;
+    position: relative;
+    bottom: 16px;
+
+}
+
+
+/*------------------------------*/
+
+.footerin4 {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    position: relative;
+    bottom: 10px;
+    left: 78px;
+    border-radius: 25px;
+}
+
+.footerin4 h6 {
+
+    position: relative;
+    left: 20px;
+    font-weight: lighter;
+    color: white;
+    text-align: start;
+    font-size: 15px;
+}
+
+.footerin4 p {
+    position: relative;
+    bottom: 35px;
+    left: 50px;
+    font-size: 10px;
+    color: white;
+}
+
+.contact {
+
+    position: relative;
+    bottom: 7px;
+    left: 15px;
+    filter: invert(100%);
+    height: 25px;
+    width: 25px;
+    border: 1px solid white;
+}
+
+.sociallinks {
+    width: 500px;
+    position: relative;
+    top: -24px;
+
+}
+
+
+.sociallinks ul {
+    overflow: auto;
+
+    height: 70px;
+
+}
+
+.sociallinks li {
+    height: 100px;
+    display: inline;
+
+}
+
+#yicon {
+    position: relative;
+    top: 5px;
+}
+
+.icons {
+    filter: invert();
+    margin: 20px;
+
+}
+
+/* --------------------------------- */
+
+.contactform {
+    display: flex;
+    justify-content: center;
+    height: auto;
+
+
+    background-image: linear-gradient(to left, rgba(67, 38, 124, 0.88), rgb(76, 21, 21));
+}
+
+.parainside {
+    display: flex;
+    width: 85%;
+    height: auto;
+
+}
+
+/* ------------------------------------ */
+/* ---------- query box --------------- */
+
+.para-of-form {
+    position: relative;
+
+    right: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.para-of-form h3 {
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.para-of-form p {
+    color: white;
+    padding-top: 20px;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* ---------------------------------- */
+
+.footerin5 {
+    display: flex;
+    height: 100%;
+    width: auto;
+    border-radius: 25px;
+}
+
+/* Basic styling for the form container */
+.container4 {
+    width: 376px;
+    
+    padding: 20px;
+    height: 480px;
+    text-align: center;
+}
+
+.form {
+    width: 370px;
+    text-align: left;
+    color: rgb(2, 1, 1);
+}
+
+/* Style for form labels and inputs */
+label {
+    color: rgb(250, 250, 250);
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="inquiry"] {
+    resize: none;
+    border-radius: 8px;
+    position: relative;
+    bottom: 25px;
+    left: 160px;
+    width: 170px;
+    height: 15px;
+    padding: 10px;
+    background-color: #f3f4f6;
+}
+
+textarea {
+    /* resize: none; */
+    position: relative;
+    bottom: 32px;
+    border-radius: 8px;
+    left: 160px;
+    width: 170px;
+    background-color: #f3f4f6;
+    padding: 10px;
+    /* margin-bottom: 15px; */
+}
+
+/* Style for the "Call Back" button */
+
+.callback-button {
+    position: relative;
+    top: 20px;
+    right: 65px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 40px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.callback-button:hover {
+    background-color: #0056b3;
+}
+
+.success-message {
+    margin: 40px;
+    color: white;
+    text-shadow: #000000;
+}
+
+
+
+/* ----------------------------------------------------- */
+
+.footer-in {
+    justify-content: center;
+    display: flex;
+    width: auto;
+    /* Adjust the width as needed */
+    margin: 0;
+    background-image: linear-gradient(to left, rgba(67, 38, 124, 0.88), rgb(76, 21, 21));
+}
+
+.logo-img{
+    
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logo {
+   
+   
+    margin: 0px;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logo img{
+    filter: invert();
+    height: 150px;
+    width: 150px;
+}
+
+.cu {
+    padding-top: 40px;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    
+}
+
+.cu-inside{
+    
+    display: flex;
+    
+}
+
+.cu-call img{
+  
+    height: 30px;
+    filter: invert();
+}
+
+.cu-para {
+    padding-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    text-align: center;
+    font-size: 10px;
+    color: white;
+}
+
+
+
+.cu-inside2 {
+    padding-top: 20px;
+    display: flex;
+    
+}
+
+.cu-gmail img{
+    height: 30px;
+    filter: invert();
+}
+
+.cu-para2 {
+    padding-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+}
+
+.social-links {
+    padding-top: 20px;
+    padding-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+   
+    width: auto;
+}
+
+
+.social-links img{
+    filter: invert();
+   
+    padding: 30px;    
+}
+
+
+
+.rights-reserved{
+    padding-left: 20px;
+    padding: 10px;
+    display: flex;
+    align-self: flex-end;
+   
+    color: white;
+    font-size: 10px;
+}

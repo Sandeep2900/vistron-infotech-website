@@ -1,0 +1,281 @@
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.distance {
+    position: relative;
+}
+
+.navbar {
+
+    width: 100%;
+    height: 92vh;
+    background-color: bisque;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.navbar li {
+    transition: transform 0.2s ease-in-out;
+
+}
+
+.nav-links {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.navbar li a {
+    width: 50px;
+    padding: 10px;
+   
+    font-weight: 500;
+    font-size: 30px;
+   
+}
+
+.navbar li:hover {
+    color: yellowgreen;
+    transform: scale(1.1);
+}
+
+
+.navbar li a:hover {
+    color: rgb(22, 207, 12);
+    stroke: cadetblue;
+
+
+}
+
+
+.navbar-btn {
+    display: block;
+    z-index: 999;
+
+}
+
+.active .navbar {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+
+}
+
+.active .navbar-btn .mobile-nav-icon[name="close"] {
+    display: block;
+    border: 2px solid black;
+}
+
+.active .navbar-btn .mobile-nav-icon[name="grid"] {
+    display: none;
+}
+
+
+
+
+
+
+ 
+ /* ----------------------- */
+ 
+ .slogans h1 {
+     text-align: center;
+     font-size: 14px;
+ }
+
+ .slogans h6 {
+     font-weight: lighter;
+     color: white;
+     text-align: center;
+     letter-spacing: 5px;
+     font-size: 10px;
+     padding-top: 10px;
+ }
+/* ------------------------------- */
+
+.writing1 {
+    padding-left: 5px;
+}
+ .writing1 h1 {
+     font-size: 20px;
+ }
+
+ .writing1 p{
+    padding-top: 15px;
+ }
+
+ /* -------------------------------- */
+
+.upperheading {
+    padding-left: 5px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.midlogo{
+    
+    height: 810px;
+}
+
+.insidemid{
+    display: flex;
+    flex-direction: column;
+}
+
+.myslides2 img{
+    height: 90px;
+    width: 90px;
+}
+
+/* -------------------------------------- */
+
+.heading3 p{
+    text-align: center;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    margin: 35px;
+}
+
+.boxy{
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 220px;
+}
+
+.boxy h5{
+    font-weight: bolder;
+    padding-top: 10px;
+    line-height: 16px;
+    letter-spacing: 3px;
+}
+
+.boxy p{
+    padding-top: 10px;
+    font-weight: bold;
+    line-height: 19px;
+}
+
+.boxy img {
+    width: 60px;
+    height: 60px;
+}
+
+.box h5 {
+    font-size: 15px;
+    display: flex;
+    font-weight: lighter;
+   
+}
+
+.standapart h3 {
+    font-size: 20px;
+    color: white;
+}
+
+.standapart p {
+    padding-top: 15px;
+}
+
+/* ----------------------- */
+
+.contactform {
+   
+    width: auto;
+    display: flex;
+    justify-content:center;
+   flex-direction: column;
+    height: 750px;
+
+}
+
+.parainside {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: auto;
+
+}
+
+.para-of-form {
+    padding-bottom: 10px;
+    position: relative;
+    left: 20px;
+    bottom: 20px;
+ display: flex;
+ flex-direction: column;
+}
+
+/* ------------------------------- */
+
+.footer-main {
+    height: auto;
+    width: auto;
+}
+
+.footer-in{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    justify-content: center;
+    height: auto;
+}
+
+.logo-img{
+    
+    display: flex;
+    justify-content: center;
+
+}
+
+/* .footer-logo{
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    width: 20px;
+
+} */
+
+.logo-img img{
+filter: invert();
+   width: 250px;
+   height: 250px;
+}
+
+.cu {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-links {
+    padding: 0;
+}
+
+.social-links img{
+    filter: invert();
+    padding: 10px;    
+}

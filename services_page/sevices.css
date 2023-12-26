@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "ubuntu", sans-serif;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+}
+
+
+.distance {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+   
+    
+}
+
+/* ------------------------------- */
+
+.mylogo {
+    padding: 10px 20px;
+    margin: -24px 23px;
+    transition: transform .2s;
+}
+
+.mylogo:hover {
+    transform: scale(1.1);
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar ul {
+    overflow: auto;
+}
+
+.navbar li {
+    float: left;
+    list-style: none;
+    padding: 0px 0px;
+    margin: 13px 20px;
+    transition: transform 0.2s ease-in-out;
+
+}
+
+.navbar li:hover {
+    transform: scale(1.1);
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: rgb(7, 7, 7);
+    font-size: 14px;
+
+}
+
+.navbar li a:hover {
+    color: rgb(22, 207, 12);
+    stroke: cadetblue;
+
+
+}
+
+/* ------------------------------- */
+.navbar-btn{
+    display: none;
+    background: transparent;
+    cursor: pointer;
+    /* border: 2px solid black; */
+    width: 5rem;
+    height: auto;
+}
+
+
+.mobile-nav-icon{
+    height: 30px;
+    width: 30px;
+}
+
+.mobile-nav-icon[name="close"] {
+    display: none;
+  }
+  
+
+/* -------------------------------------------- */
+
+.services-part{
+   
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('images/services.jpg');
+    height: 250px;
+    width: auto;
+    background-position: center;
+    background-blend-mode: darken;
+    background-size: cover;
+    display: flex;
+}
+
+.services-text{
+    width: auto;
+    height: auto;
+    display: flex;
+    padding-left: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-text p{
+    font-size: 30px;
+    font-weight: lighter;
+    color: white;
+    letter-spacing: 10px;
+}
+
+/* --------------------------- */
+
+.middle-section{
+
+   
+    height: auto;
+    width: auto;
+    padding: 90px;
+}
+
+.middle-heading h2{
+font-size: 25px;
+width: auto;
+height: auto;
+font-weight: lighter;
+letter-spacing: 4px;
+}
+
+.middle-para1{
+    padding-top: 30px;
+}
+
+.middle-para1 p{
+    line-height: 25px;
+    letter-spacing: 2.5px;
+    font-weight: lighter;
+}
+
+/* ------------------- */
+
+.services-container{
+    
+    height: auto;
+    width: auto;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.ser-cont1{
+    
+    display: flex;
+    gap: 10px;
+}
+
+.cont-inside1{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.6)), url('images/audio-sound-mixer-console-with-night-time-2021-09-04-11-43-18-utc-copy.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 210px;
+    width: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.cont-inside1:hover{
+    transition: 0.5s;
+    filter: grayscale(100%);
+
+}
+
+.cont-inside1 p{
+    color: white;
+    font-weight: bolder;
+}
+
+.cont-inside1 p:hover {
+    background-color: black;
+    transition: 0.5s;
+}
+
+.cont-inside2{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.6)), url('images/Enterprise.jpg');
+    background-position: center;
+    height: auto;
+    width: auto;
+    background-size: cover;
+    height: 210px;
+    width: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-inside2 p{
+    color: white;
+    font-weight: bolder;
+
+}
+
+.cont-inside2 p:hover {
+    background-color: black;
+    transition: 0.5s;
+}
+
+.cont-inside3{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.6)), url('images/hometheatres-img2.jpg');
+    background-position: center;
+    height: auto;
+    width: auto;
+    background-size: cover;
+    height: 210px;
+    width: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-inside3 p{
+    color: white;
+    font-weight: bolder;
+}
+
+.cont-inside3 p:hover {
+    background-color: black;
+    transition: 0.5s;
+}
+
+.cont-inside4{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.6)), url('images/LargeVenue.jpg');
+    background-position: center;
+    height: auto;
+    width: auto;
+    background-size: cover;
+    height: 210px;
+    width: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-inside4 p{
+    color: white;
+    font-weight: bolder;
+}
+
+.cont-inside4 p:hover {
+    background-color: black;
+    transition: 0.5s;
+}
+
+
+
+
+/* --------------------- */
+
+
+.footer-main {
+    padding-top: 150px;
+}
+
+
+
+
+.footer-in {
+    border: 2px solid black;
+    display: flex;
+    width: auto;
+    /* Adjust the width as needed */
+    margin: 0;
+    background-image: linear-gradient(to left, rgba(67, 38, 124, 0.88), rgb(76, 21, 21));
+}
+
+.footer-logo {
+    filter: invert();
+    margin: 0px;
+    
+
+}
+
+.cu {
+    padding-top: 40px;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    
+}
+
+.cu-inside{
+    
+    display: flex;
+    
+}
+
+.cu-call img{
+  
+    height: 30px;
+    filter: invert();
+}
+
+.cu-para {
+    padding-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    text-align: center;
+    font-size: 10px;
+    color: white;
+}
+
+
+
+.cu-inside2 {
+    padding-top: 20px;
+    display: flex;
+    
+}
+
+.cu-gmail img{
+    height: 30px;
+    filter: invert();
+}
+
+.cu-para2 {
+    padding-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+}
+
+.social-links {
+    padding-top: 20px;
+    padding-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+   
+    width: auto;
+}
+
+
+.social-links img{
+    filter: invert();
+   
+    padding: 30px;    
+}
+
+
+
+.rights-reserved{
+    padding-left: 20px;
+    padding: 10px;
+    display: flex;
+    align-self: flex-end;
+   
+    color: white;
+    font-size: 10px;
+}
